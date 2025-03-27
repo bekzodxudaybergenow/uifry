@@ -363,6 +363,12 @@ body {
   font-weight: 500;
 }
 
+.container {
+  max-width: 1120px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 :root {
   /* FONT FAMILY */
   --main-font: "ClashDisplay", sans-serif;
