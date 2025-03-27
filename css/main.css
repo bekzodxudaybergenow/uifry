@@ -307,10 +307,73 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Extralight.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Light.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Regular.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Medium.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Semibold.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplay-Bold.woff2") format("woff2"), url("/fonts/clash-display/ClashDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:root {
+  /* FONT FAMILY */
+  --main-font: "ClashDisplay", sans-serif;
+  /* COLORS */
+  --global-black: #000000;
+  --global-white: #ffffff;
+  --global-grey: #808080;
+  --global-red: #FF5555;
+  --accent-1: #FDE598;
+  --accent-2: #191D2A;
+  --accent-3: #262626;
+  --accent-4: #422F15;
+  --accent-5: #81848A;
 }
