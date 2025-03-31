@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    padding-top: 30px;
 }
 .header-row {
     display: flex;
@@ -84,5 +86,38 @@
     .header-download--mobile-btn {
         display: flex;
     }
-    
+    .header-nav {
+        display: none;
+    }
+    .header-nav--mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        bottom: 0;
+        height: 98vh;
+        width: 50%;
+        border-radius: 6px;
+        padding: 60px 0 0 40px;
+        box-shadow: 2px 0 10px 0 rgba(0, 0, 0, .4);
+        background-color: var(--global-black);
+
+        & .header-nav--link {
+            color: var(--global-white);
+        }
+        & .header-nav--link.active {
+            color: var(--global-red);
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .header-nav--mobile {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .header-nav--mobile {
+        width: 80%;
+    }
 }
