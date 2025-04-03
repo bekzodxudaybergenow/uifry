@@ -77,7 +77,7 @@
     padding: 4px;
 }
 .header-download--desktop-btn {
-    display: none;
+    display: flex;
 }
 .header-shade {
     position: absolute;
@@ -127,7 +127,7 @@
         height: 98vh;
         width: 50%;
         border-radius: 6px;
-        padding: 80px 0 0 40px;
+        padding: 80px 0 0 25px;
         transform: translateX(-110%);
         box-shadow: 2px 0 10px 0 rgba(0, 0, 0, .4);
         background-color: var(--global-black);
