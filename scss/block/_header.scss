@@ -1,6 +1,17 @@
 .header {
+    display: block;
     position: relative;
-    padding-top: 30px;
+}
+.header-wrap-one {
+    position: fixed;
+    padding: 30px 0 10px;
+    width: 100%;
+    background-color: var(--global-white);
+    transition: transform 1s ease;
+
+}
+.headScroll {
+    transform: translateY(-75px);
 }
 .header-row {
     display: flex;
@@ -80,7 +91,7 @@
     display: flex;
 }
 .header-shade {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,8 +112,6 @@
     border: none;
     border-radius: 4px;
     background-color: var(--global-red);
-
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -119,7 +128,7 @@
     .header-nav--mobile {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         row-gap: 20px;
         top: 5px;
         left: 5px;
