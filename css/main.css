@@ -600,6 +600,29 @@ body {
   margin-bottom: 90px;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer-info--link {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  text-decoration: none;
+}
+.footer-info--link span {
+  color: var(--global-black);
+  transition: color 0.3s ease;
+}
+.footer-info--link:hover span {
+  color: var(--global-red);
+}
+.footer-info--link:active span {
+  color: var(--global-active1);
+}
+
 .footer-bottom {
   text-align: center;
   padding: 40px 0;

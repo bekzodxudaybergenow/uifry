@@ -8,6 +8,27 @@
     margin-bottom: 90px;
 }
 .footer-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer-info--link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    text-decoration: none;
+    
+    & span {
+        color: var(--global-black);
+        transition: color .3s ease;
+    }
+
+    &:hover  span {
+        color: var(--global-red)
+    }
+    &:active  span{
+        color: var(--global-active1);
+    }
 }
 .footer-nav {
 }
