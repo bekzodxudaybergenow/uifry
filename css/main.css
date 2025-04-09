@@ -374,6 +374,7 @@ body {
 
 .main {
   flex-grow: 1;
+  margin: 120px 0 100px;
 }
 
 .btn {
