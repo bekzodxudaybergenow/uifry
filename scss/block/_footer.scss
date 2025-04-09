@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
+    column-gap: 100px;
 }
 .footer-info {
     display: flex;
@@ -31,6 +32,41 @@
     }
 }
 .footer-nav {
+    display: flex;
+    column-gap: 65px;
+}
+.footer-nav--list {
+    list-style: none;
+}
+.footer-list--item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.footer-item--title {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.footer-item--link {
+    color: var(--global-black);
+    text-decoration: none;
+    transition: color .3s ease;
+
+    &:hover  {
+        color: var(--global-red)
+    }
+    &:active {
+        color: var(--global-active1);
+    }
+}
+.footer-item--form {
+}
+.footer-form--input {
+}
+.footer-form--btn {
+}
+.btn {
 }
 .footer-btn {
 }
