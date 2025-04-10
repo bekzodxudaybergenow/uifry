@@ -673,17 +673,34 @@ body {
 
 .footer-line {
   position: relative;
-  border-color: red;
+  background-color: var(--global-grey);
+  border: none;
+  height: 1px;
+  position: relative;
 }
 .footer-line::before {
   content: "";
-  width: 300px;
-  height: 10px;
   position: absolute;
-  top: 0px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: linear-gradient(to right, white, var(--global-grey));
+}
+.footer-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background: linear-gradient(to left, white, var(--global-grey));
 }
 
 .footer-bottom {
   text-align: center;
   padding: 40px 0;
+}
+.footer-bottom span {
+  font-size: 16px;
 }
