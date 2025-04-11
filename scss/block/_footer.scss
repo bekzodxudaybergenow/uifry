@@ -91,7 +91,7 @@
         top: 0;
         left: 0;
         height: 100%;
-        width: 300px;
+        width: 30%;
         background: linear-gradient(to right, white, var(--global-grey));
     }
     &::after {
@@ -100,7 +100,7 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 300px;
+        width: 30%;
         background: linear-gradient(to left, white, var(--global-grey));
     }
 }
@@ -128,5 +128,12 @@
     }
     .footer-form--btn {
         justify-content: center;
+    }
+    .footer-bottom {
+        padding: 20px 0;
+        
+        & span {
+            font-size: 13px;
+        }
     }
 }
