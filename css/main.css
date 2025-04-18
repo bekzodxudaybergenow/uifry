@@ -609,6 +609,11 @@ body {
     width: 80%;
   }
 }
+.hero-image img {
+  max-width: 740px;
+  width: 100%;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
