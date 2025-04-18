@@ -70,6 +70,18 @@ body {
      flex-grow: 1;
      margin: 120px 0 100px;
 }
+.title {
+     font-weight: 700;
+     font-size: 48px;
+     line-height: 48px;
+     text-transform: capitalize;
+}
+.desc {
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 28px;
+     color: var(--global-grey);
+}
 .btn {
      display: flex;
      align-items: center;
