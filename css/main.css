@@ -609,9 +609,48 @@ body {
     width: 80%;
   }
 }
+.hero-row {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 620px;
+  margin-top: 115px;
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.hero-image {
+  position: absolute;
+  top: -60px;
+  right: -280px;
+}
+
+.hero-start--btn {
+  display: inline-block;
+}
+
+.hero-play--btn {
+  display: flex;
+}
+
 .hero-image img {
   max-width: 740px;
   width: 100%;
+}
+
+.hero-bg-image {
+  display: none;
 }
 
 .footer-top {
