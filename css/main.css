@@ -618,6 +618,7 @@ body {
 .hero-content {
   max-width: 620px;
   margin-top: 115px;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -630,20 +631,24 @@ body {
   column-gap: 40px;
 }
 
-.hero-image {
-  position: absolute;
-  top: -60px;
-  right: -280px;
-}
-
 .hero-start--btn {
   display: inline-block;
 }
 
 .hero-play--btn {
   display: flex;
+  align-items: center;
+  column-gap: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
+.hero-image {
+  position: absolute;
+  top: -60px;
+  right: -280px;
+}
 .hero-image img {
   max-width: 740px;
   width: 100%;
