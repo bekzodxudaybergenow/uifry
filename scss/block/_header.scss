@@ -1,6 +1,7 @@
 .header {
     display: block;
     position: relative;
+    z-index: 1000;
 }
 .header-wrap-one {
     position: fixed;

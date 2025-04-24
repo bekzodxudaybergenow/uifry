@@ -431,6 +431,7 @@ body {
 .header {
   display: block;
   position: relative;
+  z-index: 1000;
 }
 
 .header-wrap-one {
@@ -679,6 +680,13 @@ body {
 
 .hero-bg-image {
   display: none;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .footer-top {
