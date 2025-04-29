@@ -669,12 +669,12 @@ body {
 }
 
 .hero-image {
+  max-width: 740px;
   position: absolute;
-  top: -60px;
-  right: -280px;
+  right: 0;
 }
 .hero-image img {
-  max-width: 740px;
+  display: block;
   width: 100%;
 }
 
@@ -683,6 +683,7 @@ body {
 }
 
 .bg-gradient {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;

@@ -39,9 +39,6 @@
         height: 100%;
     }
 }
-.hero-image {
-    
-}
 .hero-start--btn {
     display: inline-block;
 }
@@ -54,12 +51,15 @@
     cursor: pointer;
 }
 .hero-image {
+    max-width: 740px;
     position: absolute;
-    top: -60px;
-    right: -280px;
+    right: 0;
+    // top: -60px;
+    // right: -280px;
     
     & img {
-        max-width: 740px;
+        display: block;
+        // max-width: 740px;
         width: 100%;
     }
 }
@@ -67,6 +67,7 @@
     display: none;
 }
 .bg-gradient {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
