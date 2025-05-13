@@ -610,6 +610,10 @@ body {
     width: 80%;
   }
 }
+.hero {
+  overflow: hidden;
+}
+
 .hero-row {
   display: flex;
   align-items: flex-start;
@@ -618,27 +622,27 @@ body {
 
 .hero-content {
   max-width: 620px;
-  margin-top: 115px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .hero-title {
   margin: 0;
-  font-size: 64px;
-  line-height: 64px;
-  margin-bottom: 37px;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 12px;
 }
 
 .hero-desc {
   text-transform: capitalize;
-  line-height: 28px;
-  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 26px;
 }
 
 .hero-btns {
   display: flex;
-  align-items: center;
-  column-gap: 40px;
+  flex-direction: column;
 }
 
 .hero-start--btn {
@@ -646,6 +650,7 @@ body {
 }
 
 .hero-content-image {
+  display: none;
   width: 560px;
   height: 360px;
 }
@@ -656,22 +661,27 @@ body {
 }
 
 .hero-start--btn {
-  display: inline-block;
+  display: flex;
+  padding: 16px;
+  font-size: 16px;
 }
 
 .hero-play--btn {
-  display: flex;
+  display: none;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .hero-image {
+  display: none;
   max-width: 740px;
   position: absolute;
   right: 0;
+  top: -60px;
+  right: -280px;
 }
 .hero-image img {
   display: block;
