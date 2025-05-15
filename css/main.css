@@ -612,12 +612,20 @@ body {
 }
 .hero {
   overflow: hidden;
+  position: relative;
+  background: url("../../images/global/bg-gradient.png");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  background-position-x: 200px;
+  z-index: -1;
 }
 
 .hero-row {
   display: flex;
-  align-items: flex-start;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-content {
@@ -677,12 +685,10 @@ body {
 }
 
 .hero-image {
-  display: none;
   max-width: 740px;
-  position: absolute;
-  right: 0;
-  top: -60px;
-  right: -280px;
+  position: relative;
+  z-index: -1;
+  order: 1;
 }
 .hero-image img {
   display: block;
@@ -701,6 +707,21 @@ body {
   z-index: -1;
 }
 
+@media screen and (min-width: 1024px) {
+  .hero-row {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .hero-image {
+    max-width: 740px;
+    position: relative;
+    z-index: -1;
+  }
+  .hero-image img {
+    display: block;
+    width: 100%;
+  }
+}
 .footer-top {
   display: flex;
   justify-content: space-between;
