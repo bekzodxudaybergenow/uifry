@@ -5,7 +5,9 @@
     background-size: 600px;
     background-repeat: no-repeat;
     background-position-y: -100px;
-    background-position-x: 200px;
+    // background-position-x: 200px;
+    background-position-y: -5%;
+    background-position-x: 20%;
     z-index: -1;
 }
 .hero-row {
@@ -16,10 +18,11 @@
 }
 .hero-content {
     max-width: 620px;
-    margin-top: 40px;
+    // margin-top: 40px;
     // margin-top: 115px;
     margin-bottom: 20px;
     // margin-top: 300px;
+    order: 2;
 }
 .hero-title {
     margin: 0;
@@ -85,12 +88,9 @@
     
     & img {
         display: block;
-        // max-width: 740px;
+        max-width: 540px;
         width: 100%;
     }
-}
-.hero-bg-image {
-    display: none;
 }
 .bg-gradient {
     display: none;

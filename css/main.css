@@ -374,7 +374,7 @@ body {
 
 .main {
   flex-grow: 1;
-  margin: 120px 0 100px;
+  margin: 100px 0 100px;
 }
 
 .title {
@@ -617,7 +617,8 @@ body {
   background-size: 600px;
   background-repeat: no-repeat;
   background-position-y: -100px;
-  background-position-x: 200px;
+  background-position-y: -5%;
+  background-position-x: 20%;
   z-index: -1;
 }
 
@@ -630,8 +631,8 @@ body {
 
 .hero-content {
   max-width: 620px;
-  margin-top: 40px;
   margin-bottom: 20px;
+  order: 2;
 }
 
 .hero-title {
@@ -692,11 +693,8 @@ body {
 }
 .hero-image img {
   display: block;
+  max-width: 540px;
   width: 100%;
-}
-
-.hero-bg-image {
-  display: none;
 }
 
 .bg-gradient {
