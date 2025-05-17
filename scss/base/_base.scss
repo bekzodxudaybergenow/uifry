@@ -69,7 +69,7 @@ body {
 .main {
      flex-grow: 1;
      margin: 100px 0 100px;
-     z-index: -1;
+     z-index: 10;
 }
 .title {
      font-weight: 700;
@@ -98,7 +98,7 @@ body {
      transition: background-color .3s ease;
 
      &:hover {
-        background-color: var(--global-red)
+        background-color: var(--global-red);
      }
      &:active {
           background-color: var(--global-active1);
