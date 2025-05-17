@@ -4,6 +4,10 @@ let headerNavMobile = document.querySelector('.header-nav--mobile');
 let headerShade = document.querySelector('.header-shade');
 let headerNavMobileCloseBtn = document.querySelector('.header-nav-mobile--close-btn');
 
+AOS.init({
+    duration: 1500,
+});
+
 headerOpenBtn.addEventListener('click', () => {
     headerNavMobile.style.transform = 'translateX(0%)';
     headerShade.style.transform = 'translateX(0%)';

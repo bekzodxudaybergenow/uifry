@@ -63,6 +63,14 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .5;
+    }
+    &:active {
+        opacity: 1;
+    }
 }
 .hero-image {
     max-width: 740px;
