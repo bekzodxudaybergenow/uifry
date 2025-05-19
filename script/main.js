@@ -5,6 +5,7 @@ let headerShade = document.querySelector('.header-shade');
 let headerNavMobileCloseBtn = document.querySelector('.header-nav-mobile--close-btn');
 
 AOS.init({
+    once: true,
     duration: 1500,
 });
 
