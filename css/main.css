@@ -972,3 +972,28 @@ body {
   color: var(--global-grey);
   line-height: 20px;
 }
+
+@media screen and (min-width: 1024px) {
+  .features-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .feature-content {
+    max-width: 430px;
+    padding-top: 60px;
+  }
+  .feature-image {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feature-content {
+    max-width: 600px;
+  }
+  .feature-image {
+    max-width: 600px;
+    position: relative;
+    left: -120px;
+    top: -40px;
+  }
+}
