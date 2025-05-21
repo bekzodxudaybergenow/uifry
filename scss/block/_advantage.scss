@@ -1,0 +1,34 @@
+.advantage-content {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.advantage-content--subtitle {
+    margin-bottom: 3px;
+}
+.advantage-content-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.advantage-list {
+    list-style: none;
+}
+.advantage-list--item {
+    margin-bottom: 24px;
+}
+.advantage-item--heading {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-bottom: 8px;
+
+    & h4 {
+        font-weight: 600;
+    }
+}
+.advantage-item--desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--global-grey);
+    line-height: 20px;
+}
