@@ -1082,4 +1082,10 @@ body {
   .advantage-content {
     max-width: 500px;
   }
+  .advantages-customizable--img {
+    order: 1;
+  }
+  .advantages-customizable--content {
+    order: 2;
+  }
 }
