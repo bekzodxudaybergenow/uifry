@@ -40,3 +40,11 @@ this.addEventListener('scroll', () => {
 
     currentScroll = scrollY;
 }) 
+
+var swiper2 = new Swiper(".mySwiper2", {
+    // spaceBetween: 10,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
