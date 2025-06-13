@@ -1091,15 +1091,11 @@ body {
 }
 .mySwiper2 {
   background-color: red;
+  max-width: 300px;
 }
 
 .swiper-wrapper {
   display: flex;
-}
-
-.swiper-slide {
-  width: 200px !important;
-  height: 200px !important;
 }
 
 .swiper-slide img {
