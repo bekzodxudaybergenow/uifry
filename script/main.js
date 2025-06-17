@@ -41,10 +41,15 @@ this.addEventListener('scroll', () => {
     currentScroll = scrollY;
 }) 
 
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    slidesPerView: 2,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
 var swiper2 = new Swiper(".mySwiper2", {
-    // spaceBetween: 10,
-    navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    slidesPerView: 1,
+    thumbs: {
+        swiper: swiper,
     },
 });
