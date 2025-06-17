@@ -15,14 +15,21 @@
 .swiper-wrapper {
     display: flex;
 }
-.swiper-slide {
-}
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
 }
-.swiper-button-next {
+.mySwiper {
+    width: 20%;
+    margin: 0 !important;
 }
-.swiper-button-prev {
+.mySwiper .swiper-slide {
+    width: 100px !important;
+}
+.mySwiper img {
+    width: 100% !important;
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
 }
