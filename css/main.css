@@ -1003,6 +1003,10 @@ body {
     top: -40px;
   }
 }
+.advantages {
+  margin-bottom: 50px;
+}
+
 .advantages-notification {
   display: flex;
   flex-direction: column;
