@@ -4,6 +4,10 @@ let headerNavMobile = document.querySelector('.header-nav--mobile');
 let headerShade = document.querySelector('.header-shade');
 let headerNavMobileCloseBtn = document.querySelector('.header-nav-mobile--close-btn');
 
+// FAQ
+let faqs = document.querySelectorAll('.faq-list--item');
+let faqAnswer = document.querySelectorAll('.faq-item--answer');
+
 AOS.init({
     once: true,
     duration: 1500,
@@ -53,3 +57,11 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+
+/* FAQ */
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+        faqAnswer.classList.toggle('active');
+    })
+})
