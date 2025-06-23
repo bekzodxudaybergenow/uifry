@@ -1195,20 +1195,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.faq-list--item.active {
-  color: var(--global-white);
-  background-color: var(--global-red);
-  transition: background-color 0.3s ease;
-}
-
-.faq-list--item.active:hover {
-  background-color: var(--global-active1);
-}
-
-.faq-list--item.active:active {
-  background-color: var(--global-red);
+  background-color: darkolivegreen;
 }
 
 .faq-item--question {
@@ -1223,12 +1210,15 @@ body {
   font-weight: 400;
   line-height: 24px;
   height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: min-height 1s ease;
+  transform: translateY(-10px);
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .faq-list--item.active .faq-item--answer {
   min-height: 80px;
-  height: 100%;
+  opacity: 1;
+  transform: translateY(0);
   overflow: visible;
 }
