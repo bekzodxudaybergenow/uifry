@@ -6,7 +6,6 @@ let headerNavMobileCloseBtn = document.querySelector('.header-nav-mobile--close-
 
 // FAQ
 let faqs = document.querySelectorAll('.faq-list--item');
-let faqAnswer = document.querySelectorAll('.faq-item--answer');
 
 AOS.init({
     once: true,
@@ -61,7 +60,16 @@ var swiper2 = new Swiper(".mySwiper2", {
 /* FAQ */
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
-        faq.classList.toggle('active');
-        faqAnswer.classList.toggle('active');
+        const isActive = faq.classList.contains('active');
+        faqs.forEach(f => {
+            const a = f.querySelector('.faq-item--answer');
+            f.classList.remove('active');
+            a.style.maxHeight = null;
+        });
+        if (!isActive) {
+            const faqAnswer = faq.querySelector('.faq-item--answer');
+            faq.classList.add('active');
+            faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+        }
     })
 })
