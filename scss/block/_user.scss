@@ -1,3 +1,6 @@
+.user {
+    margin-bottom: 50px;
+}
 .user-content--title {
     font-size: 28px;
     line-height: 30px;
@@ -42,6 +45,9 @@
     font-weight: 500;
 }
 @media screen and (min-width: 1024px) {
+    .user {
+        margin-bottom: 50px;
+    }
     .user-content {
         text-align: center;
         max-width: 400px;
