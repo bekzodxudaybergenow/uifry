@@ -1,3 +1,6 @@
+.faq {
+    margin-bottom: 120px;
+}
 .faq-content {
     max-width: 500px;
     padding-bottom: 40px;
@@ -58,6 +61,9 @@
     }
 }
 @media screen and (max-width: 425px) {
+    .faq {
+        margin-bottom: 80px;
+    }
     .faq-list--item {
         padding: 20px;
     }

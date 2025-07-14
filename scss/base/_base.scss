@@ -68,7 +68,7 @@ body {
 }
 .main {
      flex-grow: 1;
-     margin: 100px 0 100px;
+     margin: 100px 0 150px;
      z-index: 10;
 }
 .title {
@@ -114,4 +114,10 @@ body {
      max-width: 720px;
      width: 100%;
      height: auto
+}
+
+@media screen and (max-width: 425px) {
+     .main {
+          margin: 100px 0 100px;
+     }
 }

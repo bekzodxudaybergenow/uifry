@@ -1,0 +1,88 @@
+.download-row {
+    padding: 156px 77px;
+    border-radius: 8px;
+    background-color: var(--global-black);
+    background-image: url("/images/download/stars.png");
+    position: relative;
+    z-index: 1;
+}
+.download-content {
+    max-width: 536px;
+    color: var(--global-white);
+}
+.download-content--title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.download-content--desc {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.download-content--btn {
+    column-gap: 12px;
+    color: var(--global-black);
+    background-color: var(--global-white);
+    transition: color .8s ease;
+
+    &:hover {
+        color: var(--global-white);
+    }
+    & path {
+        transition: fill .8s ease;
+    }
+    &:hover path{
+        fill: var(--global-white)
+    }
+}
+.download-content--img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+    .download-content--img {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .download-row {
+        padding: 100px 40px;
+    }
+    .download-content {
+        max-width: 480px;
+    }
+    .download-content--title {
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+    .download-content--desc {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .download-content--btn {
+        font-size: 15px;
+        padding: 16px;
+    }
+    .download-content--btn svg {
+        width: 18px;
+        height: 28px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .download-row {
+        padding: 60px 20px;
+    }
+    .download-content--title {
+        font-size: 32px;
+    }
+    .download-content--desc {
+        font-size: 14px;
+    }
+    .download-content--btn {
+        padding: 12px 26px;
+    }
+}
